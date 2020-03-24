@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <link rel="stylesheet" type = "text/css" href="css.css"/> 
+        <title>Form</title>
+        <meta name="description" content="Java Form">
+        <meta name="keywords" content="FreeTutorial,JavaHelp,ProJavaHelp,Helpme">
+        <meta name="author" content="Justin Gajer">
+    </head>
+
+    <header>
+
+        <img src="images/logo.jpg" alt = "logo">    
+        <nav>
+            <ul>
+                <li><a href = "#top"><button class="btn btn-5">Home</button></a></li>
+                <li><button class="btn btn-5"><a href="https://repl.it/community/classrooms/20700">Practice Exercises</a></button></li>
+                <li><button class="btn btn-5"><a href="Community.html" target = "_blank">Communities</a></button></li>   
+                <hr />                
+                <figure>
+                    <figurecaption> Sign up here!</figurecaption>
+                    <img src = "images/signup.jpeg" class = "img-1" alt = "person holding up a sign that says sign up">
+                </figure>
+            </ul>
+            <hr />
+        </nav>
+
+    </header>
+
+
+    <form action = "submission.html">
+        <fieldset>
+            <legend>And enter the chance to get free hands on java tutoring with experts in the field! Only the email is 100% necessary to sign up!
+            </legend>
+            <br>
+            <input type="checkbox" name="option1" value="news">Opt in to receive news regarding java.<br>
+            <input type="checkbox" name="option2" value="tutor">
+            Opt in to receive advertisements regarding java tutors.
+            <br>
+            <br>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <br>
+            <br>
+            Date of Birth: <input type="date" name="bday">
+            <br>
+            <br>
+            <label> Name:            
+                <input type="password" placeholder = "Enter name here."/>
+            </label>
+            <br>
+            <label> Phone:  
+                <input name="Phone" type="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="20">
+            </label>
+            <br>
+            <label> Email: <font color="red">*</font>      
+                <input name="Email" type="Email" placeholder= "emailhere@domain.com" maxlength="35" required=""/>
+                <br>
+            </label>
+        </fieldset>
+        <hr>
+        <input type="submit" value = "Submit"/>
+        <input type="reset" value="Clear"/>
+    </form>
+    <br>
+    <a href = "index.html"><button class="btn btn-1"> Go Back</button></a> to Java Planet!
+</html> 

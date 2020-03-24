@@ -1,0 +1,179 @@
+
+.grid-container  {
+  display: grid;
+  grid-template-areas:
+    'logo menu'
+    'toppart toppart'
+    'lcontent rcontent'
+    'lcontent1 rcontent2'
+    'text1 text2'
+    'form form'
+    'footer footer';
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+@media only screen and (min-width:640px){
+    
+    .flex-container{
+    
+    display:flex;
+    grid-template-columns: repeat(1 100px);
+    grid-template-rows: repeat(8 100px);
+    grid-gap: 5px
+    padding: 5px;
+    }
+}
+
+
+.item1 { 
+    grid-area: logo; 
+    width: auto;
+}
+
+.item2 {
+    grid-area: menu;
+    width: auto;
+}
+
+.item3 {
+    grid-area: toppart;
+    width:auto;
+}
+
+.item4 { 
+    grid-area: lcontent;
+    width: auto;
+}
+
+.item5 { 
+    grid-area: rcontent;
+    width: auto;
+}
+
+.item6 { 
+    grid-area: lcontent1;
+    width: auto;
+}
+
+.item7 { 
+    grid-area: rcontent2;
+    width: auto;
+}
+
+.item8 {
+    grid-area: text1;
+       width: auto;
+     font-size: 10px;
+}
+
+.item9 {
+    grid-area: text2;
+       width: auto;
+    font-size: 10px;
+}
+
+.item10{
+     grid-area: form; 
+}
+
+
+.item11 {
+    grid-area: footer;
+}
+
+
+body{
+    background: #efefef;
+    font-family: cursive;    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: blue;
+    font-family: cursive
+}
+
+.btn {
+    padding: 6px;
+    color: white;
+    font-family: cursive;
+}
+
+.btn-1 {background-color: green}
+.btn-2 {background-color: red}
+.btn-3 {background-color: blue}
+.btn-4 {background-color: purple}
+.btn-5 {background-color: crimson}
+
+
+img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width:150px;
+}
+
+.img-1 {
+    float: right;
+    height: 400px;
+    width:   300px;
+}
+
+.img-2{
+    float: right;
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px 3px rgba(500, 500, 0, 30);
+}
+
+div{
+    padding: 6px;
+    width: 500px;
+    border: 1px solid #000000;
+}
+
+div.a{
+    word-wrap: break-word;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 75%;
+    border: 5px solid #f2f931;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f931;
+}
+
+li {
+    margin-top: 0.5em;
+}
+
+a[target]{
+    background-color: yellow;
+}
